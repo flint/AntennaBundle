@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="antenna.coder" class="Antenna\Coder" public="false" />
+
+        <service id="antenna.username_password_authenticator" class="Antenna\Security\UsernamePasswordAuthenticator">
+            <argument type="service" id="security.user_checker" />
+            <argument type="service" id="security.password_encoder" />
+            <argument type="service" id="antenna.coder" />
+        </service>
+
+        <service id="antenna.token_authenticator" class="Antenna\Security\TokenAuthenticator">
+            <argument type="service" id="security.user_checker" />
+            <argument type="service" id="antenna.coder" />
+        </service>
+    </services>
+</container>

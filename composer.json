@@ -1,0 +1,12 @@
+{
+    "name" : "flint/antenna-bundle",
+
+    "autoload" : {
+        "psr-4" : { "Flint\Bundle\AntennaBundle" : "" }
+    },
+
+    "require" : {
+        "flint/antenna" : "~1.0",
+        "symfony/security-bundle" : "~2.7"
+    }
+}
