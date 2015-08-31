@@ -1,2 +1,5 @@
 vendor/
 composer.lock
+
+Tests/Fixtures/cache
+Tests/Fixtures/logs

@@ -1,0 +1,16 @@
+framework:
+  secret:          secret
+  router: { resource: "%kernel.root_dir%/config/routing.xml" }
+  test: ~
+
+security:
+  providers:
+    in_memory:
+      memory: ~
+
+  firewalls:
+    main:
+      anonymous: true
+
+antenna:
+  secret: my-secret

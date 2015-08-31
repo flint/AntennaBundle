@@ -3,7 +3,9 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="antenna.coder" class="Antenna\Coder" public="false" />
+        <service id="antenna.coder" class="Antenna\Coder" public="false">
+            <argument>%antenna.shared_secret%</argument>
+        </service>
 
         <service id="antenna.username_password_authenticator" class="Antenna\Security\UsernamePasswordAuthenticator">
             <argument type="service" id="security.user_checker" />
