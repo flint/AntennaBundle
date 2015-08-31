@@ -1,6 +1,9 @@
 AntennaBundle
 =============
 
+[![Build Status](https://travis-ci.org/flint/AntennaBundle.svg?branch=master)](https://travis-ci.org/flint/AntennaBundle)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/flint/AntennaBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/flint/AntennaBundle/?branch=master)
+
 Makes it easier to integrate Antenna (and through it JWT) authentication
 with your Symfony project.
 
