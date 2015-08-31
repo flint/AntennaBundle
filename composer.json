@@ -1,7 +1,8 @@
 {
     "name" : "flint/antenna-bundle",
     "license" : "MIT",
-    "type" : "symfony-bundle"
+    "description" : "Symfony and Antenna",
+    "type" : "symfony-bundle",
 
     "autoload" : {
         "psr-4" : { "Flint\\Bundle\\AntennaBundle\\" : "" }
