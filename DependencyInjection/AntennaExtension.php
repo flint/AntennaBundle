@@ -11,6 +11,7 @@ class AntennaExtension extends \Symfony\Component\HttpKernel\DependencyInjection
     protected function loadInternal(array $mergedConfig, ContainerBuilder $container)
     {
         $container->setParameter('antenna.shared_secret', $mergedConfig['secret']);
+        $container->setParameter('antenna.time_to_live', $mergedConfig['time_to_live']);
 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');

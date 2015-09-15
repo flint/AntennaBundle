@@ -18,6 +18,9 @@ class Configuration implements ConfigurationInterface
                     ->isRequired()
                     ->cannotBeEmpty()
                 ->end()
+                ->scalarNode('time_to_live')
+                    ->defaultValue('7 days')
+                ->end()
             ->end()
         ;
 

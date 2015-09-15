@@ -9,12 +9,13 @@
     },
 
     "require" : {
-        "flint/antenna" : "~1.0",
+        "flint/antenna" : "~1.2",
         "symfony/security-bundle" : "~2.7",
         "symfony/framework-bundle" : "~2.7"
     },
 
     "require-dev" : {
-        "symfony/finder" : "~2.7"
+        "symfony/finder" : "~2.7",
+        "matthiasnoback/symfony-config-test" : "~1.2"
     }
 }

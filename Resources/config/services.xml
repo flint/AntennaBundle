@@ -11,6 +11,9 @@
             <argument type="service" id="security.user_checker" />
             <argument type="service" id="security.password_encoder" />
             <argument type="service" id="antenna.coder" />
+            <argument type="collection">
+                <argument key="time_to_live">%antenna.time_to_live%</argument>
+            </argument>
         </service>
 
         <service id="antenna.token_authenticator" class="Antenna\Security\TokenAuthenticator">
